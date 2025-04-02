@@ -1,0 +1,19 @@
+import { auth } from "@/auth";
+import LogoutButton from "@/components/logout-button";
+import DashboardContent from "../../../components/dashboard-content";
+
+export default async function DashboardPage() {
+  const session = await auth();
+
+  if (!session) {
+    return <div>Not authenticated</div>;
+  }
+
+  return (
+    <div className="p-4">
+      <h1 className="text-3xl font-bold text-black mb-4">Datos parcelas</h1>
+      <hr/>
+      <DashboardContent />
+    </div>
+  );
+}
