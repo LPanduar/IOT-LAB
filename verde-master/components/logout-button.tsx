@@ -10,6 +10,6 @@ const LogoutButton = () => {
     });
   };
 
-  return <Button className="bg-white text-black" onClick={handleClick}>LogOut</Button>;
+  return <Button className="bg-white text-black" onClick={handleClick}>Cerrar sesión</Button>;
 };
 export default LogoutButton;

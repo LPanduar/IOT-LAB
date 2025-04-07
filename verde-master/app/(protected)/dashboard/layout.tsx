@@ -62,8 +62,8 @@ export default async function DashboardLayout({
             </aside>
 
             {/* Contenido Principal con ambiente verde */}
-            <main className="flex-1 p-8 bg-gradient-to-br from-green-50 to-white">
-                <div className="bg-white rounded-lg shadow-md p-6 border border-green-100">{children}</div>
+            <main className="flex-1 p-8">
+                <div className="">{children}</div>
             </main>
         </div>
     )

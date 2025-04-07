@@ -10,10 +10,6 @@ export default async function DashboardPage() {
   }
 
   return (
-    <div className="p-4">
-      <h1 className="text-3xl font-bold text-black mb-4">Datos parcelas</h1>
-      <hr/>
       <DashboardContent />
-    </div>
   );
 }

@@ -1,24 +1,24 @@
 import { object, string } from "zod";
 
 export const loginSchema = object({
-  email: string({ required_error: "Email is required" })
-    .min(1, "Email is required")
-    .email("Invalid email"),
-  password: string({ required_error: "Password is required" })
-    .min(1, "Password is required")
-    .min(6, "Password must be more than 6 characters")
-    .max(32, "Password must be less than 32 characters"),
+  email: string({ required_error: "El correo electrónico es obligatorio" })
+      .min(1, "El correo electrónico es obligatorio")
+      .email("Correo electrónico inválido"),
+  password: string({ required_error: "La contraseña es obligatoria" })
+      .min(1, "La contraseña es obligatoria")
+      .min(6, "La contraseña debe tener más de 6 caracteres")
+      .max(32, "La contraseña debe tener menos de 32 caracteres"),
 });
 
 export const registerSchema = object({
-  email: string({ required_error: "Email is required" })
-    .min(1, "Email is required")
-    .email("Invalid email"),
-  password: string({ required_error: "Password is required" })
-    .min(1, "Password is required")
-    .min(6, "Password must be more than 6 characters")
-    .max(32, "Password must be less than 32 characters"),
-  name: string({ required_error: "Name is required" })
-    .min(1, "Name is required")
-    .max(32, "Name must be less than 32 characters"),
+  email: string({ required_error: "El correo electrónico es obligatorio" })
+      .min(1, "El correo electrónico es obligatorio")
+      .email("Correo electrónico inválido"),
+  password: string({ required_error: "La contraseña es obligatoria" })
+      .min(1, "La contraseña es obligatoria")
+      .min(6, "La contraseña debe tener más de 6 caracteres")
+      .max(32, "La contraseña debe tener menos de 32 caracteres"),
+  name: string({ required_error: "El nombre es obligatorio" })
+      .min(1, "El nombre es obligatorio")
+      .max(32, "El nombre debe tener menos de 32 caracteres"),
 });
